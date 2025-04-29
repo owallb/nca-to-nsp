@@ -16,7 +16,7 @@ This tool works by:
 ### Building from source
 
 ```bash
-git clone https://github.com/yourusername/nca-to-nsp.git
+git clone https://github.com/owallb/nca-to-nsp.git
 cd nca-to-nsp
 go build -o nca-to-nsp ./cmd/nca-to-nsp
 ```
@@ -26,18 +26,18 @@ go build -o nca-to-nsp ./cmd/nca-to-nsp
 Basic usage:
 
 ```bash
-nca-to-nsp -o <output-file.nsp> file1.nca [file2.nca ...]
+./nca-to-nsp -o <output-file.nsp> file1.nca [file2.nca ...]
 ```
 
 ### Command-line Options
 
-| Flag | Default | Description |
-|------|---------|-------------|
-| `-o` | `out.nsp` | NSP output file name |
-| `-buffer` | `4096` | Buffer size for file copying operations |
-| `-progress` | `false` | Show progress bar |
-| `-h` | `false` | Display help information |
-| `-v` | `false` | Display version information |
+| Flag | Description |
+|------|-------------|
+| `-o` | NSP output file name (default: out.nsp) |
+| `-buffer` | Buffer size for file copying operations (default: 4096) |
+| `-progress` | Show progress bar |
+| `-h` | Display help information |
+| `-v` | Display version information |
 
 ### Example
 
